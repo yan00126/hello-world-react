@@ -7,6 +7,8 @@ import Hello from './components/Hello.js';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Message from './components/Message.js';
 import Counter from './components/Counter.js';
+import FunctionClick from './components/FunctionClick.js';
+import ClassClick from './components/ClassClick.js';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         >
           Learn React
         </a> */}
+        <ClassClick />
+        <FunctionClick />
         <Counter />
         <Greet name="Bruce" heroName="Wayne">
           <p>This is children props</p>
