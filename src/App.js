@@ -1,6 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import  Greet  from './components/Greet.js'
+import Welcome from './components/Welcome.js';
+import Hello from './components/Hello.js';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Message from './components/Message.js';
+import Counter from './components/Counter.js';
 
 function App() {
   return (
@@ -10,15 +16,26 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+        <Counter />
+        <Greet name="Bruce" heroName="Wayne">
+          <p>This is children props</p>
+        </Greet>
+        <Greet name="Luke" heroName="Skywalker" />
+          <button class="btn btn-primary">Vote</button>
+        <Welcome name="YanFei" heroName="SlimShaddy" />
+        <Hello />
+        <Message />
       </header>
+
+      
     </div>
   );
 }
